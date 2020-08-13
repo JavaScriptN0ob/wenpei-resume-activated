@@ -16,6 +16,15 @@
   top: 0;
   z-index: 500;
 }
+a {
+  text-decoration: none;
+  color: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
 
 .nav__item {
   /* border: 1px solid gold; */
@@ -227,7 +236,7 @@
 }
 
 .resume__container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding-top: 110px;
 }
 
@@ -780,6 +789,10 @@
   cursor: pointer;
 }
 
+.cover__link > a {
+  color: white;
+}
+
 .cover_icon {
   /* border: 1px solid red; */
   display: block;
@@ -926,8 +939,8 @@
 }
 
 .resume__contact {
-  border: 1PX solid blue;
-  height: 100vh;
+  /* border: 1PX solid blue; */
+  height: 90vh;
 }
 
 .contact__title::before {
@@ -958,6 +971,112 @@
   margin-top: 20px;
 }
 
+.contact__container {
+  /* border: 1px solid gold; */
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  flex-wrap: wrap;
+}
+
+.input__container {
+  /* border: 1px solid red; */
+  margin-top: 50px;
+}
+
+.input__row {
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.input_title {
+  width: 80px;
+  margin-right: 124px;
+  height: 25px;
+}
+
+.input_name {
+  width: 200px;
+  height: 25px;
+}
+
+.input_email {
+  width: 200px;
+  height: 25px;
+}
+
+.input_mobile {
+  width: 200px;
+  height: 25px;
+}
+
+.input_message {
+  width: 410px;
+}
+
+.contact__submit {
+  height: 36px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background-color: white;
+  font-weight: bold;
+  font-size: 12px;
+  width: 140px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.contact__submit:hover {
+  color: #a74141;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.personal_details__container {
+  /* border: 1px solid red; */
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.my_details {
+  /* border: 1px solid black; */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.my_details p {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.detail__title {
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 10px;
+}
+
+.my_time {
+  /* border: 1px solid black;   */
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.my_time p {
+  color: rgba(0, 0, 0, 0.45); 
+  font-size: 14px;
+  font-weight: bold; 
+}
+
 .copyright__container {
-  border: 1px solid black;  
+  /* border: 1px solid black;   */
+  height: 40px;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
 }
