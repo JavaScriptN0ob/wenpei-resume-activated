@@ -661,8 +661,9 @@
 }
 
 .resume__project {
-  border: 1PX solid blue;
-  height: 100vh;
+  /* border: 1PX solid blue; */
+  height: 120vh;
+  overflow: auto;
 }
 
 .project__title::before {
@@ -687,11 +688,6 @@
   letter-spacing: 2px;
 }
 
-.resume__social {
-  border: 1PX solid blue;
-  height: 100vh;
-}
-
 .social__title::before {
   content: "";
   display: block;
@@ -703,6 +699,98 @@
   margin-right: auto;
 }
 
+.project__container {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* max-width: 1000px; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.project {
+  /* border: 4px solid black; */
+  width: 33%;
+  position: relative;
+  min-width: 320px;
+}
+
+.project_screen_shoot {
+  width: 100%;
+}
+
+.project__cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.cover__title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cover__category {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.cover__button {
+  border: 2px solid white;
+  margin-top: 20px;
+  width: 150px;
+  height: 32px;
+  border-radius: 40px;
+  display: flex;
+  position: relative;
+}
+
+.cover__view {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cover__divider {
+  background-color: white;
+  width: 2px;
+  position: absolute;
+  left: 74px;
+  top: 0;
+  height: 100%;
+}
+
+.cover__link {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cover_icon {
+  /* border: 1px solid red; */
+  display: block;
+}
+
+.resume__social {
+  /* border: 1PX solid blue; */
+  height: 90vh;
+  overflow: auto;
+}
+
 .social__title {
   /* border: 1px solid red; */
   background-color: rgba(0, 0, 0, 0.1);
@@ -712,6 +800,129 @@
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   letter-spacing: 2px;
+}
+
+.social__container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.social__img {
+  /* border: 1px solid black; */
+  position: relative;
+  width: 450px;
+  height: 243px;
+  min-width: 320px;
+  margin: 20px;
+}
+
+.linked_in {
+  background-image: url('../assets/linkedin.png');
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.github {
+  background-image: url('../assets/github.png');
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__date__wrapper {
+  position: absolute;
+  color: white;
+  top: 0;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.social__greeting {
+  font-size: 14px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.social__row {
+  /* border: 1px solid red; */
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social__content {
+  /* border: 1px solid red; */
+  width: 410px;
+  min-width: 320px;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.social__topic {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.social__author {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.author {
+  color: #a74141;
+  font-weight: bold;
+}
+
+.social__introduction {
+  /* border: 1px solid red; */
+  font-size: 15px;
+  margin-top: 10px;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.social__link {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 140px;
+  height: 35px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 33px;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.social__link:hover {
+  cursor: pointer;
+  color: #a74141;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .resume__contact {
@@ -739,6 +950,12 @@
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   letter-spacing: 2px;
+}
+
+.contact_further {
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 .copyright__container {
